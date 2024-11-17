@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+/* Results Container */
+.results-container {
+  padding: 20px;
+  background-color: #f4f6f9;
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Title */
+.results-title {
+  text-align: center;
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Results List */
+.results-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for smaller screens, adjust for larger screens */
+  gap: 20px;
+}
+
+/* Result Card */
+.result-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+/* Hover effect on result cards */
+.result-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Question Title */
+.question-title {
+  color: #007bff;
+  font-size: 1.25em;
+  margin-bottom: 15px;
+}
+
+/* Result Details */
+.result-details {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.result-details p {
+  margin-bottom: 10px;
+}
+
+.result-details strong {
+  color: #333;
+}
